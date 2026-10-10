@@ -1,0 +1,41 @@
+{
+  "name": "fm_scenes",
+  "version": "0.1.0",
+  "description": "Persistent roleplay environmental scenes for HogwartsMP",
+  "mafiahub": {
+    "serverScripts": [
+      "dist/server.js"
+    ],
+    "clientScripts": [
+      "dist/client.js"
+    ],
+    "files": [
+      "dist/client.js",
+      "dist/placement.html",
+      "dist/labels.html"
+    ],
+    "exports": [
+      "status"
+    ],
+    "resourceDependencies": [
+      {
+        "name": "hmp-lib",
+        "version": "0.8.0"
+      },
+      {
+        "name": "hmp-ui",
+        "version": "0.8.0"
+      },
+      {
+        "name": "hmp-mysql",
+        "version": "0.8.0"
+      },
+      {
+        "name": "hmp-core",
+        "version": "0.8.0"
+      }
+    ],
+    "errorBehavior": "stop",
+    "priority": 100
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "visibility": {
+    "mode": "category",
+    "key": "lalt",
+    "maxDistanceMeters": 80,
+    "allowPlayerPreference": false,
+    "distanceFade": false,
+    "requireLineOfSight": false,
+    "categoryDefaultDistanceMeters": {
+      "scene": 8,
+      "writing": 8,
+      "letter": 8,
+      "parchment": 8
+    },
+    "categoryInspectKey": "lalt",
+    "categoryRules": {
+      "scene": "always",
+      "writing": "always",
+      "letter": "hold",
+      "parchment": "hold",
+      "note": "hold",
+      "detail": "always"
+    }
+  },
+  "creation": {
+    "maxScenesPerPlayer": 20,
+    "maxTextLength": 420,
+    "maxDurationMinutes": 10080,
+    "allowPermanent": true,
+    "maximumPlacementDistanceMeters": 11.5,
+    "allowAdminDeleteAll": true,
+    "defaultPlacementDistanceMeters": 2.5,
+    "fallbackEyeHeightMeters": 1.6,
+    "maximumCameraDistanceMeters": 10,
+    "minimumPlacementDistanceMeters": 0.5,
+    "adminDeleteCapability": "admin.view",
+    "adminDeleteMenuDistanceMeters": 20,
+    "adminDeleteMenuLimit": 200
+  },
+  "persistence": {
+    "enabled": true
+  },
+  "render": {
+    "promptKey": "SCENE",
+    "refreshMs": 150,
+    "placementMode": "screen-center-projection",
+    "placementRefreshMs": 25,
+    "wheelStepMeters": 0.5,
+    "wheelOutKey": "mousewheeldown",
+    "wheelInKey": "mousewheelup",
+    "distanceFarKey": "e",
+    "distanceNearKey": "q",
+    "distanceSlideSpeedMetersPerSecond": 2.5,
+    "distanceHoldAccelerationMs": 180
+  },
+  "unitsPerMeter": 100,
+  "previewMarker": {
+    "enabled": true,
+    "model": "/Game/Gameplay/Stations/Interaction/MailInteraction/Props/SM_HGW_BulletinBrd.SM_HGW_BulletinBrd",
+    "scale": 0.08,
+    "collision": false,
+    "updateMs": 50,
+    "moveThresholdCm": 8,
+    "yawOffset": 0,
+    "fallbackRecreate": true,
+    "categoryModels": {
+      "letter": "/Game/Environment/Hogsmeade/Common/Meshes/MiscDecorations/SM_HM_Letter_A.SM_HM_Letter_A",
+      "parchment": "/Game/Environment/Hogwarts/Meshes/Props/SM_HW_PArchmentScroll_E.SM_HW_PArchmentScroll_E"
+    },
+    "categoryScales": {
+      "letter": 1.0,
+      "parchment": 1.0
+    },
+    "parchmentVariants": {
+      "B": "/Game/Environment/Hogwarts/Meshes/Props/SM_HW_PArchmentScroll_B.SM_HW_PArchmentScroll_B",
+      "E": "/Game/Environment/Hogwarts/Meshes/Props/SM_HW_PArchmentScroll_E.SM_HW_PArchmentScroll_E"
+    },
+    "recreateIntervalMs": 100
+  },
+  "roleplay": {
+    "enabled": true,
+    "meRangeMeters": 5,
+    "doRangeMeters": 10,
+    "doDurationSeconds": 10,
+    "syncIntervalMs": 75,
+    "maxMeLength": 140,
+    "maxDoLength": 140,
+    "commandCooldownMs": 700,
+    "meOffsetMeters": 0.0,
+    "doOffsetMeters": 1.0,
+    "clientRefreshMs": 75,
+    "movementThresholdCm": 5
+  },
+  "multiLabelRenderer": {
+    "enabled": true,
+    "refreshMs": 33,
+    "maxLabels": 36,
+    "defaultHorizontalFovDegrees": 85
+  }
+}
